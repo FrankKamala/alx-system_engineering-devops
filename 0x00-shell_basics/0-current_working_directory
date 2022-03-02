@@ -1,1 +1,2 @@
-realpath 0x00-shell_basics
+#! /bin/sh
+echo "$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")"
